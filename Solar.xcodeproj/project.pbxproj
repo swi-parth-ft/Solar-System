@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0762A16927F6748600AB307D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0762A16827F6748600AB307D /* DetailViewController.swift */; };
+		0762A16F27FB921000AB307D /* CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0762A16E27FB921000AB307D /* CoreData.swift */; };
+		0762A17127FBA00100AB307D /* FavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0762A17027FBA00100AB307D /* FavViewController.swift */; };
+		0762A17427FBB05200AB307D /* FavDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0762A17327FBB05200AB307D /* FavDetailsViewController.swift */; };
 		07E7463C27F5FA0800129C60 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E7463B27F5FA0800129C60 /* AppDelegate.swift */; };
 		07E7463E27F5FA0800129C60 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E7463D27F5FA0800129C60 /* SceneDelegate.swift */; };
 		07E7464027F5FA0800129C60 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E7463F27F5FA0800129C60 /* ViewController.swift */; };
@@ -14,9 +18,15 @@
 		07E7464627F5FA0800129C60 /* Solar.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 07E7464427F5FA0800129C60 /* Solar.xcdatamodeld */; };
 		07E7464827F5FA0900129C60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07E7464727F5FA0900129C60 /* Assets.xcassets */; };
 		07E7464B27F5FA0900129C60 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07E7464927F5FA0900129C60 /* LaunchScreen.storyboard */; };
+		07E7465327F5FA7400129C60 /* Planets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E7465227F5FA7400129C60 /* Planets.swift */; };
+		07E7465527F5FAB500129C60 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E7465427F5FAB500129C60 /* Network.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0762A16827F6748600AB307D /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		0762A16E27FB921000AB307D /* CoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreData.swift; sourceTree = "<group>"; };
+		0762A17027FBA00100AB307D /* FavViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavViewController.swift; sourceTree = "<group>"; };
+		0762A17327FBB05200AB307D /* FavDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavDetailsViewController.swift; sourceTree = "<group>"; };
 		07E7463827F5FA0800129C60 /* Solar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Solar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07E7463B27F5FA0800129C60 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		07E7463D27F5FA0800129C60 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +36,8 @@
 		07E7464727F5FA0900129C60 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		07E7464A27F5FA0900129C60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		07E7464C27F5FA0900129C60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07E7465227F5FA7400129C60 /* Planets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Planets.swift; sourceTree = "<group>"; };
+		07E7465427F5FAB500129C60 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +51,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		07BF8FEA2806F7DF00AFE470 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				07E7463F27F5FA0800129C60 /* ViewController.swift */,
+				0762A16827F6748600AB307D /* DetailViewController.swift */,
+				0762A17027FBA00100AB307D /* FavViewController.swift */,
+				0762A17327FBB05200AB307D /* FavDetailsViewController.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		07BF8FEB2806F7EB00AFE470 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				07E7465227F5FA7400129C60 /* Planets.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		07BF8FEC2806F80700AFE470 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				07E7465427F5FAB500129C60 /* Network.swift */,
+				0762A16E27FB921000AB307D /* CoreData.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
 		07E7462F27F5FA0800129C60 = {
 			isa = PBXGroup;
 			children = (
@@ -60,9 +100,11 @@
 			children = (
 				07E7463B27F5FA0800129C60 /* AppDelegate.swift */,
 				07E7463D27F5FA0800129C60 /* SceneDelegate.swift */,
-				07E7463F27F5FA0800129C60 /* ViewController.swift */,
-				07E7464127F5FA0800129C60 /* Main.storyboard */,
+				07BF8FEB2806F7EB00AFE470 /* model */,
+				07BF8FEA2806F7DF00AFE470 /* view */,
+				07BF8FEC2806F80700AFE470 /* controller */,
 				07E7464727F5FA0900129C60 /* Assets.xcassets */,
+				07E7464127F5FA0800129C60 /* Main.storyboard */,
 				07E7464927F5FA0900129C60 /* LaunchScreen.storyboard */,
 				07E7464C27F5FA0900129C60 /* Info.plist */,
 				07E7464427F5FA0800129C60 /* Solar.xcdatamodeld */,
@@ -142,9 +184,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				07E7464027F5FA0800129C60 /* ViewController.swift in Sources */,
+				07E7465327F5FA7400129C60 /* Planets.swift in Sources */,
+				07E7465527F5FAB500129C60 /* Network.swift in Sources */,
+				0762A17127FBA00100AB307D /* FavViewController.swift in Sources */,
 				07E7463C27F5FA0800129C60 /* AppDelegate.swift in Sources */,
+				0762A17427FBB05200AB307D /* FavDetailsViewController.swift in Sources */,
+				0762A16F27FB921000AB307D /* CoreData.swift in Sources */,
 				07E7463E27F5FA0800129C60 /* SceneDelegate.swift in Sources */,
 				07E7464627F5FA0800129C60 /* Solar.xcdatamodeld in Sources */,
+				0762A16927F6748600AB307D /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
